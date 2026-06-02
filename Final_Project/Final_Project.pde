@@ -10,7 +10,6 @@ void setup(){
 }
 
 void draw(){
-  void draw(){
   if(mode==menu)menu();
   else if(mode==game)game();
   else if(mode==end)end();
