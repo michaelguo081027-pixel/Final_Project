@@ -3,5 +3,5 @@ void game(){
 }
 
 void gameClicks(){
-    mode=end;
+    view=end;
 }

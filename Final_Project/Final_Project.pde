@@ -6,13 +6,14 @@ int view;
 
 void setup(){
   size(800, 800);
-  int=menu;
+  textAlign(CENTER, CENTER);
+  view=menu;
 }
 
 void draw(){
-  if(mode==menu)menu();
-  else if(mode==game)game();
-  else if(mode==end)end();
-  else if(mode==pause)pause;
+  if(view==menu)menu();
+  else if(view==game)game();
+  else if(view==end)end();
+  else if(view==pause)pause();
   else println("ERROR: INVALID ENTRY");
 }
