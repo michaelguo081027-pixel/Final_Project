@@ -7,5 +7,5 @@ void end(){
 }
 
 void endClicks(){
-    view=menu;
+  view=menu;
 }
