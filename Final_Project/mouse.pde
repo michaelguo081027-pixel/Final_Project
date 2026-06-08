@@ -4,4 +4,5 @@ void mouseReleased(){
   else if(view==pause)pauseClicks();
   else if(view==end)endClicks();
   else if(view==options)optionsClicks();
+  else if(view==rules)rulesClicks();
 }
