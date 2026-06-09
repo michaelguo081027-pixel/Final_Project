@@ -6,12 +6,20 @@ final int options=5;
 final int rules=6;
 int view;
 int score, highscore;
+int[] x;
+int[] y;
+int tx, ty;
+int c;
+String s;
+
 
 void setup(){
   size(800, 800);
   textAlign(CENTER, CENTER);
   view=menu;
   highscore=0;
+  s="Pause";
+
 }
 
 void draw(){

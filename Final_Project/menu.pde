@@ -1,12 +1,28 @@
 void menu(){
-    background(0, 0, 255);
-    textSize(100);
-    text("Wave Survival", width/2, height/2);
-    textSize(50);
-    text("START", width/2, 3*height/4);
-    score=0;
+  background(0, 0, 255);
+  textSize(100);
+  text("DOUBLE POWER", width/2, height/4);
+  textSize(50);
+  text("CLICK TO START", width/2, 3*height/4);
+  score=2;
+  int i=0;
+  c=16;
+  x=new int[c];
+  y=new int[c];
+  tx=160;
+  ty=200;
+  while (i<c){
+    x[i]= tx;
+    y[i]= ty;
+    tx=tx+160;
+    if(tx>750){
+      tx=160;
+      ty=ty+150;
+    }
+    i=i+1;
+  }
 }
 
 void menuClicks(){
-    view=rules;
+  view=rules;
 }
