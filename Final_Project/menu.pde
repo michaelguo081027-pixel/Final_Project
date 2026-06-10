@@ -1,10 +1,12 @@
 void menu(){
-  background(0, 0, 255);
+  background(192);
   textSize(100);
   text("DOUBLE POWER", width/2, height/4);
   textSize(50);
   text("CLICK TO START", width/2, 3*height/4);
-  score=2;
+  score=0;
+  space=16;
+  t=1.5;
   int i=0;
   c=16;
   x=new int[c];

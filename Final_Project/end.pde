@@ -1,5 +1,6 @@
 void end(){
   background(255, 0, 0);
+  fill(255);
   textSize(100);
   text("GAME OVER", width/2, height/4);
   textSize(50);
