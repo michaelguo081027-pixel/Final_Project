@@ -1,7 +1,0 @@
-void options(){
-  
-}
-
-void optionsClicks(){
-  
-}
