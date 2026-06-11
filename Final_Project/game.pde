@@ -14,7 +14,7 @@ void game(){
   //numbers
   
   //end
-  if(space==0)view=over;
+  if(space==0)view=end;
 }
 
 void gameClicks(){

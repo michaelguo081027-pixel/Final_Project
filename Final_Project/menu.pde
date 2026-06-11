@@ -1,7 +1,10 @@
 void menu(){
-  background(192);
+  image(gif[f], 0, 0, width, height);
+  f=f+1;
+  if(f==n)f=0;
+  fill(0);
   textSize(100);
-  text("DOUBLE POWER", width/2, height/4);
+  text("DOUBLE 'XTREME", width/2, height/4);
   textSize(50);
   text("CLICK TO START", width/2, 3*height/4);
   score=0;
