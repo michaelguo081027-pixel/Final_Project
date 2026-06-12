@@ -1,20 +1,13 @@
 void game(){
-  background(0, 255, 0);
+  background(135, 206, 250);
   fill(0);
   textSize(50);
   text("Score: "+score, width/6, height/12);
   text("Click to Pause", 3*width/4, height/12);
-  //space
-  int i=0;
-  while(i<c){
-    fill(192);
-    circle(x[i], y[i], 125);
-    i++;
-  }
-  //numbers
-  
-  //end
-  if(space==0)view=end;
+  square(h,v,l);
+  if(akey==true||leftkey==true)h=h-5;
+  if(dkey==true||rightkey==true)h=h+5;
+  if(wkey==true||upkey==true)v=v-5;
 }
 
 void gameClicks(){

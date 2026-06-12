@@ -1,11 +1,5 @@
 void end(){
-  t=t-0.01;
-  fill(0);
-  textSize(100);
-  text("NO MORE MOVES", width/2, height/2);
-  if(t<0){
-    background(255, 0, 0);
-    fill(255);
+    fill(0);
     textSize(100);
     text("GAME OVER", width/2, height/4);
     textSize(50);
@@ -16,7 +10,6 @@ void end(){
     }else if(score<highscore)text("HIGHSCORE: "+highscore, width/2, 15*height/32);
     text("YOUR SCORE: "+score, width/2, 17*height/32);
     text("Click to Main Menu", width/2, 3*height/4);
-  }
 }
 
 void endClicks(){

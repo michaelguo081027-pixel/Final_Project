@@ -5,13 +5,14 @@ final int pause=4;
 final int rules=5;
 int view;
 int score, highscore;
+float h, v, l;
 int[] x;
 int[] y;
 int tx, ty;
 int c;
 int space;
 float t;
-boolean wkey, skey, upkey, downkey, akey, dkey, leftkey, rightkey;
+boolean wkey, upkey, akey, dkey, leftkey, rightkey;
 PImage[] gif;
 PImage icon;
 int f;
@@ -19,10 +20,11 @@ int n;
 
 void setup(){
   size(800, 800);
-  surface.setTitle("Double 'Xtreme");
+  surface.setTitle("ONLY UP!");
   icon= loadImage("Icon.png");
   surface.setIcon(icon);
   textAlign(CENTER, CENTER);
+  rectMode(CENTER);
   view=menu;
   highscore=0;
   //gif
