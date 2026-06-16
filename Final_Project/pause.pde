@@ -1,4 +1,5 @@
 void pause(){
+  //continue button
   strokeWeight(3);
   stroke(0);
   fill(255);

@@ -1,3 +1,10 @@
+import ddf.minim.*;
+import ddf.minim.analysis.*;
+import ddf.minim.effects.*;
+import ddf.minim.signals.*;
+import ddf.minim.spi.*;
+import ddf.minim.ugens.*;
+
 final int menu=1;
 final int game=2;
 final int end=3;
@@ -5,10 +12,8 @@ final int pause=4;
 final int rules=5;
 int view;
 int score, highscore;
-float y, v, l, i, j, m;
-int tx, ty;
+float x, y;
 int c;
-float t;
 PImage[] gif;
 PImage icon;
 int f;

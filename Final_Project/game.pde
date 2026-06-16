@@ -16,8 +16,10 @@ void game(){
   circle(width/2, 15*height/16, 20);
   //rotate the pad & pins
   
-  //game over when a pin overlaps another pin
-  
+  //game over when a pin hits another pin
+  if(){
+    view=end;
+  }
 }
 
 void gameClicks(){
