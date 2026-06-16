@@ -4,18 +4,17 @@ void menu(){
   if(f==n)f=0;
   fill(0);
   textSize(100);
-  text("THE FRONT", width/2, height/4);
+  text("PIN IT!", width/2, height/4);
   textSize(50);
   text("CLICK TO START", width/2, 3*height/4);
-  h=width/2;
   l=50;
-  t=5;
+  y=15*height/16;
   i=-50;
   j=700;
+  pins=180;
   m=random(0, 800);
   v=height-l/2;
   score=0;
-  time=0;
 }
 
 void menuClicks(){

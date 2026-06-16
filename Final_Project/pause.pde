@@ -1,15 +1,13 @@
 void pause(){
-  fill(135, 206, 250);
-  stroke(135, 206, 250);
-  rect(3*width/4, width/16, width/2, height/8);
-  fill(0);
-  textSize(100);
-  text("PAUSED", width/2, height/2);
-  textSize(50);
-  text("Click to Continue", 3*width/4, height/12);
+  strokeWeight(3);
   stroke(0);
+  fill(255);
+  circle(650, 100, 100);
+  triangle(635, 75, 635, 125, 665, 100);
+  fill(0);
+  text("PAUSED", width/2, height/2);
 }
 
 void pauseClicks(){
-  view=game;
+  if(dist(mouseX, mouseY, 650, 100)<50)view=game;
 }

@@ -5,20 +5,19 @@ final int pause=4;
 final int rules=5;
 int view;
 int score, highscore;
-float h, v, l, i, j, m;
+float y, v, l, i, j, m;
 int tx, ty;
 int c;
 float t;
-boolean wkey, upkey, akey, dkey, leftkey, rightkey;
 PImage[] gif;
 PImage icon;
 int f;
 int n;
-float time;
+int pins;
 
 void setup(){
   size(800, 800);
-  surface.setTitle("THE FRONT");
+  surface.setTitle("PIN IT!");
   icon= loadImage("Icon.png");
   surface.setIcon(icon);
   textAlign(CENTER, CENTER);
