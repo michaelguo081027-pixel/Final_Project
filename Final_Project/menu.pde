@@ -12,8 +12,26 @@ void menu(){
   //initialization
   x=width/2;
   y=15*height/16;
-  pins=180;
   score=0;
+  minim=new Minim(this);
+  failure=minim.loadFile("FAILURE.wav");
+  //pins
+  c=360;
+  h=new float[c];
+  v=new float[c];
+  show=new boolean[c];
+  tv=400;
+  th=200;
+  int j=0;
+  t=1;
+  while (j<c){
+    h[j]= th;
+    v[j]= tv;
+    show[j]=true;
+    th=th+120;
+
+    j=j+1;
+  }
 }
 
 void menuClicks(){

@@ -11,15 +11,21 @@ void game(){
   textSize(50);
   //scoring:1 pin=1 pt
   text("Score: "+score, width/6, height/12);
-  fill(255);
+  fill(0);
   circle(width/2, height/2, 200);
   circle(width/2, 15*height/16, 20);
+  
+  int j=0;
+  while (j<c){
+    if(show[j]==false){
+      managePin(j);
+    }
+    j++;
+  }
   //rotate the pad & pins
   
   //game over when a pin hits another pin
-  if(){
-    view=end;
-  }
+  
 }
 
 void gameClicks(){
@@ -35,4 +41,12 @@ void gameClicks(){
     circle(width/2, y, 20);
     score++;
   }  
+}
+
+void managePin(int j){
+  line(width/2, height/2, h[j], v[j]);
+  circle(h[j], v[j], 20);
+  if(dist(h[j],v[j],x,y)<=75/2+30/2){
+  show[j]=true;
+  }
 }

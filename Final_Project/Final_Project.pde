@@ -18,7 +18,14 @@ PImage[] gif;
 PImage icon;
 int f;
 int n;
-int pins;
+float[] h;
+float[] v;
+float th, tv;
+boolean[] show;
+float t;
+
+Minim minim;
+AudioPlayer background, shoot, failure;
 
 void setup(){
   size(800, 800);
