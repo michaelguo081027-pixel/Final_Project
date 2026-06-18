@@ -1,41 +1,58 @@
+//music
 import ddf.minim.*;
 import ddf.minim.analysis.*;
 import ddf.minim.effects.*;
 import ddf.minim.signals.*;
 import ddf.minim.spi.*;
 import ddf.minim.ugens.*;
-
+Minim minim;
+AudioPlayer background, shoot, failure;
+//views
 final int menu=1;
 final int game=2;
 final int end=3;
 final int pause=4;
 final int rules=5;
 int view;
-int score, highscore;
-float x, y;
-int c;
+//gif&icon
 PImage[] gif;
 PImage icon;
+//variables
+int score, highscore;
+float x, y;
 int f;
 int n;
-float[] h;
-float[] v;
-float th, tv;
-boolean[] show;
 float t;
 
-Minim minim;
-AudioPlayer background, shoot, failure;
+ArrayList<Needle> needles = new ArrayList<Needle>();
+
+float wheelRadius;
+float rotationAngle;
+float rotationSpeed;
+
+Needle flyingNeedle = null;
+
+boolean gameOver = false;
+
+float collisionAngle = radians(4);
+
+Needle hitNeedle = null;
+Needle failedNeedle = null;
+
+
 
 void setup(){
   size(800, 800);
-  surface.setTitle("PIN IT!");
+  surface.setTitle("P-INTEREST!");
   icon= loadImage("Icon.png");
   surface.setIcon(icon);
   textAlign(CENTER, CENTER);
   rectMode(CENTER);
   view=menu;
   highscore=0;
+  wheelRadius = 80;
+  rotationAngle = 0;
+  rotationSpeed = 0.02;
   //gif
   n=18;
   gif=new PImage[18];

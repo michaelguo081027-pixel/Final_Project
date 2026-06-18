@@ -5,7 +5,8 @@ void pause(){
   fill(255);
   circle(650, 100, 100);
   triangle(635, 75, 635, 125, 665, 100);
-  text("PAUSED", width/2, height/2);
+  fill(0);
+  text("PAUSED", width/4, height/8);
 }
 
 void pauseClicks(){
