@@ -17,4 +17,6 @@ void end(){
 
 void endClicks(){
   view=menu;
+  minim=new Minim(this);
+  failure=minim.loadFile("FAILURE.wav");
 }

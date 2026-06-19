@@ -13,8 +13,6 @@ void menu(){
   x=width/2;
   y=15*height/16;
   score=0;
-  minim=new Minim(this);
-  failure=minim.loadFile("FAILURE.wav");
   t=1;
   needles.clear();
   flyingNeedle = null;

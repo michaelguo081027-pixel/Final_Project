@@ -19,27 +19,17 @@ PImage[] gif;
 PImage icon;
 //variables
 int score, highscore;
-float x, y;
-int f;
-int n;
-float t;
-
-ArrayList<Needle> needles = new ArrayList<Needle>();
-
+int f, n;
+float x, y, t;
 float wheelRadius;
 float rotationAngle;
 float rotationSpeed;
-
-Needle flyingNeedle = null;
-
+float collisionAngle;
+ArrayList<Needle> needles = new ArrayList<Needle>();
 boolean gameOver = false;
-
-float collisionAngle = radians(4);
-
+Needle flyingNeedle = null;
 Needle hitNeedle = null;
 Needle failedNeedle = null;
-
-
 
 void setup(){
   size(800, 800);
@@ -53,6 +43,9 @@ void setup(){
   wheelRadius = 80;
   rotationAngle = 0;
   rotationSpeed = 0.02;
+  collisionAngle = radians(4);
+  minim=new Minim(this);
+  failure=minim.loadFile("FAILURE.wav");
   //gif
   n=18;
   gif=new PImage[18];
